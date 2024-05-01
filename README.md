@@ -59,4 +59,26 @@ wpd               Warping Path Diversity
 ==================================================
 ```
 
-## 
+Check the output example in [metrics.csv](https://github.com/MSD-IRIMAS/Evaluating-HMG/blob/main/metrics.csv).
+
+## Plotting the Metrics
+
+Supposing that you ran the code on all models you want to compare and you ended up with a csv file like the example in [metrics_models.csv](https://github.com/MSD-IRIMAS/Evaluating-HMG/blob/main/metrics_models.csv) than you can plot on a polygon radar chart the following figure:
+
+<p align="center">
+<img src="imgs/Metrics.png" alt="radar" width="70%"/>
+</p>
+
+To construct the above figure, please simply run the file `plot_metrics_polygon` and make sure you set the [`csv_file`](https://github.com/MSD-IRIMAS/Evaluating-HMG/blob/4f3ac7b795edec38b9f412b3c4539ddfb220064c/plot_metrics_polygone.py#L300) parameter to the csv file you want to use for the plotting.
+
+
+## Citing this Work
+
+...
+
+## Acknowledgments
+
+This work was supported by the ANR DELEGATION project (grant ANR-21-CE23-0014) of the French Agence Nationale de la Recherche.
+The authors would like to acknowledge the High Performance Computing Center of the University of Strasbourg for supporting this work by providing scientific support and access to computing resources.
+Part of the computing resources were funded by the Equipex Equip@Meso project (Programme Investissements d’Avenir) and the CPER Alsacalcul/Big Data.
+The authors would also like to thank the creators and providers of the HumanAct12 dataset.
