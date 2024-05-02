@@ -66,7 +66,7 @@ Check the output example in [metrics.csv](https://github.com/MSD-IRIMAS/Evaluati
 Supposing that you ran the code on all models you want to compare and you ended up with a csv file like the example in [metrics_models.csv](https://github.com/MSD-IRIMAS/Evaluating-HMG/blob/main/metrics_models.csv) than you can plot on a polygon radar chart the following figure:
 
 <p align="center">
-<img src="imgs/Metrics.png" alt="radar" width="70%"/>
+<img src="imgs/Metrics.png" alt="radar" width="40%"/>
 </p>
 
 To construct the above figure, please simply run the file `plot_metrics_polygon` and make sure you set the [`csv_file`](https://github.com/MSD-IRIMAS/Evaluating-HMG/blob/4f3ac7b795edec38b9f412b3c4539ddfb220064c/plot_metrics_polygone.py#L300) parameter to the csv file you want to use for the plotting.
