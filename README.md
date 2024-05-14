@@ -82,3 +82,4 @@ This work was supported by the ANR DELEGATION project (grant ANR-21-CE23-0014) o
 The authors would like to acknowledge the High Performance Computing Center of the University of Strasbourg for supporting this work by providing scientific support and access to computing resources.
 Part of the computing resources were funded by the Equipex Equip@Meso project (Programme Investissements d’Avenir) and the CPER Alsacalcul/Big Data.
 The authors would also like to thank the creators and providers of the HumanAct12 dataset.
+We would also like to thank the [aeon](https://github.com/aeon-toolkit/aeon) python package for providing a fast implementation of DTW that we utilize for our propose WPD metric.
