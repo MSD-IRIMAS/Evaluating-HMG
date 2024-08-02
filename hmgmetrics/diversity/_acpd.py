@@ -2,7 +2,7 @@ from typing import *
 import numpy as np
 import tensorflow as tf
 
-from metrics.base import BaseMetricCalculator
+from hmgmetrics.base import BaseMetricCalculator
 
 
 class ACPD(BaseMetricCalculator):

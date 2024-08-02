@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from scipy.linalg import sqrtm
 
-from metrics.base import BaseMetricCalculator
+from hmgmetrics.base import BaseMetricCalculator
 from sklearn.model_selection import train_test_split
 
 

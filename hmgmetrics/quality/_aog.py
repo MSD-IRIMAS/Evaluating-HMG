@@ -4,7 +4,7 @@ import tensorflow as tf
 
 from sklearn.metrics import accuracy_score
 
-from metrics.base import BaseMetricCalculator
+from hmgmetrics.base import BaseMetricCalculator
 
 
 class AOG(BaseMetricCalculator):
