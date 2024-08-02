@@ -16,10 +16,10 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics import pairwise_distances
 from sklearn.model_selection import train_test_split
 
-from metrics.base import BaseMetricCalculator
+from hmgmetrics.base import BaseMetricCalculator
 
 
-class DENSITY(BaseMetricCalculator):
+class COVERAGE(BaseMetricCalculator):
     def __init__(
         self,
         classifier: tf.keras.models.Model,
@@ -28,7 +28,7 @@ class DENSITY(BaseMetricCalculator):
     ) -> None:
         self.n_neighbors = n_neighbors
 
-        super(DENSITY, self).__init__(classifier=classifier, batch_size=batch_size)
+        super(COVERAGE, self).__init__(classifier=classifier, batch_size=batch_size)
 
     def get_distances_k_neighbors(self, x: np.ndarray, k: int) -> np.ndarray:
         nn = NearestNeighbors(n_neighbors=k)
@@ -55,17 +55,18 @@ class DENSITY(BaseMetricCalculator):
         gen_latent = self.to_latent(x=xgenerated)
 
         real_gen_distance_matrix = pairwise_distances(X=real_latent, Y=gen_latent)
-
         real_distances_k_neighbors = self.get_distances_k_neighbors(
             x=real_latent, k=self.n_neighbors + 1
         )
 
-        scaler = 1 / (1.0 * self.n_neighbors)
-        inside_neighborhood = (
-            real_gen_distance_matrix
-            < np.expand_dims(real_distances_k_neighbors, axis=1)
-        ).sum(axis=0)
+        distances_nearest_neighbor_real_to_gen = np.min(
+            real_gen_distance_matrix, axis=1
+        )
 
-        density = scaler * np.mean(inside_neighborhood)
+        exists_inside_neighborhood = (
+            distances_nearest_neighbor_real_to_gen < real_distances_k_neighbors
+        )
 
-        return density
+        coverage = np.mean(exists_inside_neighborhood)
+
+        return coverage

@@ -1,8 +1,8 @@
 import pandas as pd
 from typing import *
 
-from metrics.quality import FID, DENSITY, AOG
-from metrics.diversity import APD, ACPD, COVERAGE, WPD, MMS
+from hmgmetrics.quality import FID, DENSITY, AOG
+from hmgmetrics.diversity import APD, ACPD, COVERAGE, WPD, MMS
 
 
 class METRIC_CALCULATOR:

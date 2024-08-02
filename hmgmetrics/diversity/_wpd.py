@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 from aeon.distances import dtw_alignment_path
-from metrics.base import BaseMetricCalculator
+from hmgmetrics.base import BaseMetricCalculator
 
 
 class WPD(BaseMetricCalculator):
