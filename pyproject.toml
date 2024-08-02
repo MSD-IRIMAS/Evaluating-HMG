@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools >= 64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hmgmetrics"
+description = "Unified framework for Human Motion Generation Evaluation."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["human motion generation", "metrics"]
+dynamic = ['version']
+dependencies = [
+    "aeon~=0.8.1",
+    "numpy~=1.26.4",
+    "pandas~=2.0.3",
+    "tensorflow~=2.16.1",
+    "scikit-learn~=1.4.2",
+]
+requires-python = ">= 3.8"
+authors = [
+    {name = "Ali Ismail-Fawaz", email = "ali-el-hadi.ismail-fawaz@uha.fr"},
+    {name = "Maxime Devanne"},
+    {name = "Stefano Berreti"},
+    {name = "Jonathan Weber"},
+    {name = "Germain Forestier"}
+]
+maintainers = [
+    {name = "Lourenco Abrunhosa Rodrigues", email = "lourenco@uni-bremen.de"}
+]
+classifiers = [
+    "Development Status :: 5",
+    "Intended Audience :: Researchers",
+    "Topic :: Data Generation :: Evaluation Metrics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+
+[project.optional-dependencies]
+plot = ["matplotlib~=3.8.4"]
+
+[tool.setuptools]
+packages = ["hmgmetrics"]
+
+[tool.setuptools.dynamic]
+version = {attr = "hmgmetrics.__version__"}
