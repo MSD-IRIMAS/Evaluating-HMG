@@ -74,7 +74,20 @@ To construct the above figure, please simply run the file `plot_metrics_polygon`
 
 ## Citing this Work
 
-...
+If you use this work, please cite the following:
+```
+@article{ismail-fawaz2025DeepGenMetrics,
+  author = {Ismail-Fawaz, A. and Devanne, M. and Berretti, S. and Weber, J. and Forestier, G.},
+  title = {Establishing a unified evaluation framework for human motion generation: A comparative analysis of metrics},
+  journal = {Computer Vision and Image Understanding},
+  volume = {254},
+  number = {3},
+  pages = {104337},
+  url = {https://doi.org/10.1016/j.cviu.2025.104337},
+  year = {2025},
+  publisher = {Elsevier}
+}
+```
 
 ## Acknowledgments
 
