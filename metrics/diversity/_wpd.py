@@ -51,7 +51,7 @@ class WPD(BaseMetricCalculator):
             G_prime = xgenerated[np.random.choice(a=all_indices, size=self._Swpd)]
 
             for i in range(self._Swpd):
-                dtw_path, dtw_dist = dtw_alignment_path(x=G[i], y=G_prime[i])
+                dtw_path, dtw_dist = dtw_alignment_path(x=G[i].transpose(1,0), y=G_prime[i].transpose(1,0))
                 dtw_path = np.asarray(dtw_path)
 
                 wpd_values.append(
