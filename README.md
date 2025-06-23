@@ -6,7 +6,7 @@ Authors: [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/)<sup>1</sup>, [Maxi
 <sup>2</sup> [MICC, University of Florence, Italy](http://www.micc.unifi.it/)<br>
 <sup>3</sup> [DSAI, Monash University, Australia](https://www.monash.edu/it/dsai)
 
-This repository contains the source code to support the paper titled "Establishing a Unified Evaluation Framework for Human Motion Generation: A Comparative Analysis of Metrics".
+This repository contains the source code to support the paper titled "[Establishing a Unified Evaluation Framework for Human Motion Generation: A Comparative Analysis of Metrics](https://doi.org/10.1016/j.cviu.2025.104337)", accepted at the [International Journal on Computer Vision and Image Understanding](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding) in 2025, in the special issue [Eyes on People: Recent Trends on Human Analysis, Perception and Generation](https://www.sciencedirect.com/special-issue/10D4CNGW8PB).
 
 ## Abstract
 
